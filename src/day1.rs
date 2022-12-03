@@ -1,7 +1,7 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 
-pub fn calorie_counting(file_name: &str) -> i128 {
+pub fn stage1(file_name: &str) -> i128 {
     let file =  File::open(file_name)
         .expect("file not found");
 
@@ -29,7 +29,7 @@ pub fn calorie_counting(file_name: &str) -> i128 {
     largest
 }
 
-pub fn calorie_counting_top3(file_name: &str) -> i128 {
+pub fn stage2(file_name: &str) -> i128 {
     let file = File::open(file_name)
         .expect("file not found");
 
